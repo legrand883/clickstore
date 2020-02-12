@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { collectExternalReferences } from '@angular/compiler';
+import { Articulo } from './Modelos/articulo';
 
 @Component({
   selector: 'app-root',
@@ -175,9 +176,8 @@ console.log(item)
 
     // FIN FUNCION DE BUSQUEDA FLECHA
 
-    
-    
-    // E J E R C I C I O
+    // --- --- --- --- --- --- --- --- --- --- --- 
+    // INICIO E J E R C I C I O
     let lista_numero: number[] = [1,43,3,65,3,48,9];
     let resul: number[]=lista_numero.filter(item=>
       {
@@ -185,5 +185,17 @@ console.log(item)
       })
 
       console.log("MARYOR DE 40 SON: ",resul);
-}
+
+    // FIN E J E R C I C I O
+    // --- --- --- --- --- --- --- --- --- --- --- 
+
+
+
+    let Articulo : Articulo =
+    {
+      nombre:"Refresco",
+      precio: 11.7
+    };
+    Articulo.precio = 7.11
+  }
 }
