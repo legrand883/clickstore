@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule }            from '@angular/platform-browser';
+import { NgModule }                 from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule }         from './app-routing.module';
+import { AppComponent }             from './app.component';
+import { UtilidadesModule}          from './Utilidades/utilidades.module';
+import { AdministracionModule}      from './administracion/administracion.module';
+import{ModulosExternosComponent}    from './Paginas/modulos-externos/modulos-externos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,ModulosExternosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UtilidadesModule,
+    AdministracionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
