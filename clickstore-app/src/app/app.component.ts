@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { collectExternalReferences } from '@angular/compiler';
-import { Articulo } from './Modelos/articulo';
+import { Articulo, Fruta, Verdura, Alcohol, Impuestos } from './Modelos';
 
 @Component({
   selector: 'app-root',
@@ -197,5 +197,15 @@ console.log(item)
       precio: 11.7
     };
     Articulo.precio = 7.11
+
+
+     // ----------- ----------- ----------- ----------- ----------- ----------- ----------- ----------- ----------- ----------- ----------- EJERCICIO DE 12 FEBRERO 2020
+
+
+     let alcohol : Alcohol = new Alcohol (250, "Tequila");
+     alcohol.porcentaje=0.3;
+
+     let porcentaje = alcohol.getPorcentajeAlcohol();
+
   }
 }
