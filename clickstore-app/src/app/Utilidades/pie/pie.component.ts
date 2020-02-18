@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pie',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PieComponent implements OnInit {
 
   precio: number = 12.33;
+
+  @Input() precio2: number = 7.11; //angular
+  
   constructor() { }
 
   ngOnInit(): void {

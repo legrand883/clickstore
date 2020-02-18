@@ -1,5 +1,9 @@
+<!--{{articulo.precio}}!-->
+
 <div class="card text-center">
-    <app-encabezado></app-encabezado>
-    <app-cuerpo></app-cuerpo>
-    <app-pie></app-pie>
+    <app-encabezado [titulo2]="articulo.nombre"></app-encabezado>       <!--metodo angular-->
+    <br>
+    <app-cuerpo [descripcion2]="articulo.descripcion"></app-cuerpo>     <!--metodo angular-->
+    <br>
+    <app-pie [precio2]="articulo.precio"></app-pie>                     <!--metodo angular-->
 </div>
