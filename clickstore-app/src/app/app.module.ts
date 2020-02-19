@@ -8,11 +8,12 @@ import { AdministracionModule}      from './administracion/administracion.module
 import { ModulosExternosComponent}    from './Paginas/modulos-externos/modulos-externos.component';
 import { VistaBootstrapComponent } from './Paginas/vista-bootstrap/vista-bootstrap.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { ProductosModule } from './productos/productos.module'
+import { ProductosModule } from './productos/productos.module';
+import { VistaComponentComponent } from './paginas/vista-component/vista-component.component'
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 <!--{{articulo.precio}}!-->
 
-<div class="card text-center">
+<div class="card text-center  {{clase_coloreado}}">
     <app-encabezado [titulo2]="articulo.nombre"></app-encabezado>       <!--metodo angular-->
     <br>
     <app-cuerpo [descripcion2]="articulo.descripcion"></app-cuerpo>     <!--metodo angular-->
     <br>
-    <app-pie [precio2]="articulo.precio" (onImporte)="addImporte($event)"></app-pie>                     <!--metodo angular-->
+    <app-pie [precio2]="articulo.precio" (onImporte)="addImporte($event)" (onSeleccionar)="colorear($event)"></app-pie>                     <!--metodo angular-->
 </div>

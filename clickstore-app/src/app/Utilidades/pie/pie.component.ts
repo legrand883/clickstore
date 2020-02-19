@@ -13,6 +13,8 @@ export class PieComponent implements OnInit {
 
   @Input() precio2: number = 7.11; //angular
   @Output() onImporte:EventEmitter<number>= new EventEmitter<number>();
+  
+  @Output() onSeleccionar:EventEmitter<boolean>= new EventEmitter<boolean>();
 
 
   constructor() { }
@@ -35,5 +37,10 @@ export class PieComponent implements OnInit {
     //alert("AQUI VAMOS -calcular el total-")//sirve para debugguear, son simples alertas
     let total = this.importe * this.cantidad
     this.onImporte.emit(total);
+  }
+
+  seleccionar ()
+  {
+    this.onSeleccionar.emit(true);
   }
 }

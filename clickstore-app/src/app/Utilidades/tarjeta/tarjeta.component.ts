@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Articulo} from '../../Modelos/articulo'
 
 @Component({
@@ -8,7 +8,9 @@ import {Articulo} from '../../Modelos/articulo'
 })
 export class TarjetaComponent implements OnInit 
 { 
-  public articulo: Articulo =
+  public clase_coloreado:string='';
+
+  @Input() public articulo: Articulo =
   {
     precio: 12,
     nombre: 'Articulo',
@@ -23,5 +25,11 @@ export class TarjetaComponent implements OnInit
   public addImporte(importe:number)
   {
     console.log(importe);
+  }
+
+  colorear(event:boolean)
+  {
+    if (event)
+    this.clase_coloreado = 'colorear_border';
   }
 }
