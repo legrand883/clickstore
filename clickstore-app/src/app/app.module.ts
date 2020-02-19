@@ -11,11 +11,12 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductosModule } from './productos/productos.module';
 import { VistaComponentComponent } from './paginas/vista-component/vista-component.component';
 import { VistaCicloComponent } from './paginas/vista-ciclo/vista-ciclo.component';
-import { VistaCondicionComponent } from './paginas/vista-condicion/vista-condicion.component'
+import { VistaCondicionComponent } from './paginas/vista-condicion/vista-condicion.component';
+import { VistaSwitchComponent } from './paginas/vista-switch/vista-switch.component'
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent
   ],
   imports: [
     BrowserModule,
