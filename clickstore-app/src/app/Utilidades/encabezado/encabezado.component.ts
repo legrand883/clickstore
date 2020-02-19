@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { __importDefault } from 'tslib';
 
 @Component({
@@ -12,16 +12,19 @@ export class EncabezadoComponent implements OnInit
     public codigo: number = 3711
     public clase: string = "fondo";
 
-    @Input() titulo2: string = "eme Le Grand";//angular
+    @Input() titulo2: string;//angular
     @Input() codigo2: number = 3711           //angular
     @Input() clase2: string = "fondo";        //angular
 
 
-  constructor() { }
+  constructor() 
+   {
+      console.log("CONSTRUCTOR",this.titulo2);
+   }
 
   ngOnInit()
   {
-    
+    console.log("NGONINIT",this.titulo2);
   }
   
   public getStatus():string
