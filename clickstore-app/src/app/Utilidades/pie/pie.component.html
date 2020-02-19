@@ -1,6 +1,15 @@
 <div class="card-footer text-muted">
     {{precio2}}
     <!--<input type="number" value="1.0">     metodo normal--> 
-    <input type="number" [value]="precio"> <!--ANGULAR-->
-    <input type="number" [value]="precio" (click)=> <!--ANGULAR-->
+    <!--<input type="number" [value]="precio">--> <!--ANGULAR-->
+    <br><label>Precio</label> <br>
+        <input type="number" [value]="precio" (change)="calculoImporte($event)"> <!--JAVASCRIPT-->
+    <br><label>Cantidad</label> <br>
+        <input type="number" [value]="cantidad" (change)="cantidad = $event.target.value"> <!--ANGULAR-->
+    <br>
+        <label>este es el importe real: {{importe}}</label>
+    <br>  
+        <button (click)="calculaTotal()">Importe Total</button>
+    <br>
+        
   </div>

@@ -20,4 +20,8 @@ export class TarjetaComponent implements OnInit
   ngOnInit(): void {
   }
 
+  public addImporte(importe:number)
+  {
+    console.log(importe);
+  }
 }

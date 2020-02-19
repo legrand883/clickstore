@@ -5,5 +5,5 @@
     <br>
     <app-cuerpo [descripcion2]="articulo.descripcion"></app-cuerpo>     <!--metodo angular-->
     <br>
-    <app-pie [precio2]="articulo.precio"></app-pie>                     <!--metodo angular-->
+    <app-pie [precio2]="articulo.precio" (onImporte)="addImporte($event)"></app-pie>                     <!--metodo angular-->
 </div>
