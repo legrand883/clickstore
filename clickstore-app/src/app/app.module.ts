@@ -9,11 +9,12 @@ import { ModulosExternosComponent}    from './Paginas/modulos-externos/modulos-e
 import { VistaBootstrapComponent } from './Paginas/vista-bootstrap/vista-bootstrap.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductosModule } from './productos/productos.module';
-import { VistaComponentComponent } from './paginas/vista-component/vista-component.component'
+import { VistaComponentComponent } from './paginas/vista-component/vista-component.component';
+import { VistaCicloComponent } from './paginas/vista-ciclo/vista-ciclo.component'
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ export class EncabezadoComponent implements OnInit
     public codigo: number = 3711
     public clase: string = "fondo";
 
-    @Input() titulo2: string;//angular
+    @Input() titulo2: string;                 //angular
     @Input() codigo2: number = 3711           //angular
     @Input() clase2: string = "fondo";        //angular
 
