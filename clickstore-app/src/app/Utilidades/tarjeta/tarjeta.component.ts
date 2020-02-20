@@ -12,7 +12,7 @@ export class TarjetaComponent implements OnInit
 
   @Input() public articulo: Articulo =
   {
-    precio: 12,
+    precio: 12.371121,
     nombre: 'Articulo',
     descripcion: 'Esta es la descripcion'
    }

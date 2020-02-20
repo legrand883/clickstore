@@ -13,7 +13,7 @@ export class VistaCicloComponent implements OnInit {
     {
       nombre:"Refresco",
       descripcion: 'liquido',
-      precio: 3
+      precio: 3.371121
     },
     {
       nombre:"Hamburguesa",
