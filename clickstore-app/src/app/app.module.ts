@@ -12,11 +12,12 @@ import { ProductosModule } from './productos/productos.module';
 import { VistaComponentComponent } from './paginas/vista-component/vista-component.component';
 import { VistaCicloComponent } from './paginas/vista-ciclo/vista-ciclo.component';
 import { VistaCondicionComponent } from './paginas/vista-condicion/vista-condicion.component';
-import { VistaSwitchComponent } from './paginas/vista-switch/vista-switch.component'
+import { VistaSwitchComponent } from './paginas/vista-switch/vista-switch.component';
+import { VistaClaseComponent } from './paginas/vista-clase/vista-clase.component'
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent, VistaClaseComponent
   ],
   imports: [
     BrowserModule,
