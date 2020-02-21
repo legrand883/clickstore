@@ -32,12 +32,12 @@ export class AppComponent  implements OnInit {
   	  }
 
   var resultado = document.getElementById("Resultado");
-  resultado.innerHTML = objeto1.nombre;
+  //resultado.innerHTML = objeto1.nombre;
 
-  resultado.innerHTML = objeto2['nombre'];
+  //resultado.innerHTML = objeto2['nombre'];
 
   let atributo: string = "apellido";
-  resultado.innerHTML = objeto1[atributo];
+  //resultado.innerHTML = objeto1[atributo];
 
   let nulo: string = null;
 
@@ -61,7 +61,7 @@ export class AppComponent  implements OnInit {
   // FIN arrow functions
 
   usuario.setNombre("Lorenita");
-  resultado.innerHTML = usuario.getNombre();
+  //resultado.innerHTML = usuario.getNombre();
 
   // --- 
 
