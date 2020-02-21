@@ -9,12 +9,12 @@ import { ModulosExternosComponent}    from './Paginas/modulos-externos/modulos-e
 import { VistaBootstrapComponent } from './Paginas/vista-bootstrap/vista-bootstrap.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductosModule } from './productos/productos.module';
-import { VistaComponentComponent } from './paginas/vista-component/vista-component.component';
-import { VistaCicloComponent } from './paginas/vista-ciclo/vista-ciclo.component';
-import { VistaCondicionComponent } from './paginas/vista-condicion/vista-condicion.component';
-import { VistaSwitchComponent } from './paginas/vista-switch/vista-switch.component';
-import { VistaClaseComponent } from './paginas/vista-clase/vista-clase.component';
-import { VistaEstiloComponent } from './paginas/vista-estilo/vista-estilo.component'
+import { VistaComponentComponent } from './Paginas/vista-component/vista-component.component';
+import { VistaCicloComponent } from './Paginas/vista-ciclo/vista-ciclo.component';
+import { VistaCondicionComponent } from './Paginas/vista-condicion/vista-condicion.component';
+import { VistaSwitchComponent } from './Paginas/vista-switch/vista-switch.component';
+import { VistaClaseComponent } from './Paginas/vista-clase/vista-clase.component';
+import { VistaEstiloComponent } from './Paginas/vista-estilo/vista-estilo.component'
 
 @NgModule({
   declarations: [
