@@ -14,11 +14,16 @@ import { VistaCicloComponent } from './Paginas/vista-ciclo/vista-ciclo.component
 import { VistaCondicionComponent } from './Paginas/vista-condicion/vista-condicion.component';
 import { VistaSwitchComponent } from './Paginas/vista-switch/vista-switch.component';
 import { VistaClaseComponent } from './Paginas/vista-clase/vista-clase.component';
-import { VistaEstiloComponent } from './Paginas/vista-estilo/vista-estilo.component'
+import { VistaEstiloComponent } from './Paginas/vista-estilo/vista-estilo.component';
+import { VistaIdentificadorComponent } from './Paginas/vista-identificador/vista-identificador.component';
+import { VistaAgregarUsuarioComponent } from './Paginas/vista-agregar-usuario/vista-agregar-usuario.component';
+import { VistaAgregarUsuariosComponent } from './Paginas/vista-agregar-usuarios/vista-agregar-usuarios.component';
+import { VistaUsuariosComponent } from './Paginas/vista-usuarios/vista-usuarios.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, VistaUsuariosComponent
   ],
   imports: [
     BrowserModule,

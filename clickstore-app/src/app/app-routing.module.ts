@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TarjetaComponent } from './Utilidades/tarjeta/tarjeta.component'
 import { VistaBootstrapComponent} from './Paginas/vista-bootstrap/vista-bootstrap.component'
-import {VistaCicloComponent } from './Paginas/vista-ciclo/vista-ciclo.component'
+import { VistaCicloComponent } from './Paginas/vista-ciclo/vista-ciclo.component'
 import { VistaClaseComponent } from './Paginas/vista-clase/vista-clase.component'
 import { VistaComponentComponent } from './Paginas/vista-component/vista-component.component'
 import { VistaCondicionComponent} from './Paginas/vista-condicion/vista-condicion.component'
 import { VistaEstiloComponent} from './Paginas/vista-estilo/vista-estilo.component'
 import { VistaSwitchComponent } from './Paginas/vista-switch/vista-switch.component'
-
+import { VistaIdentificadorComponent } from './Paginas/vista-identificador/vista-identificador.component'
+import { VistaAgregarUsuarioComponent} from './Paginas/vista-agregar-usuario/vista-agregar-usuario.component'
+import { VistaUsuariosComponent} from './Paginas/vista-usuarios/vista-usuarios.component'
 
 
 const routes: Routes = [
@@ -43,7 +45,20 @@ const routes: Routes = [
   {
     path:'component',
     component:VistaComponentComponent
+  },
+  {
+    path:'productos/:ID/:IDENTIFICADOR',
+    component:VistaIdentificadorComponent
+  },
+  {
+    path:'usuarios/agregar',
+    component:VistaAgregarUsuarioComponent
+  },
+  {
+    path:'usuarios',
+    component:VistaUsuariosComponent
   }
+
 ];
 
 @NgModule({
