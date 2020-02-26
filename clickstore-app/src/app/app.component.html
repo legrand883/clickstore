@@ -1,7 +1,7 @@
 
 
 <div class = "row">
-    <div class="col-md-3">
+    <div class="col-md-3" [hidden]="!autService.activo">
         <div class="list-group">
             <!--<a href="#" class="list-group-item list-group-item-action active">
               Cras justo odio
@@ -17,7 +17,15 @@
             <a class="list-group-item" routerLink="usuarios">usuarios</a>
           </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9" [ngClass]="{'col-md-9':autService.activo, 'col-md-12':!autService.activo}">
+
+      <ul class="nav justify-content-end" [hidden]="!autService.activo">
+        <li class="nav-item">
+          <button class="btn btn-success" (click)="autService.salir()">S A L I R</button>
+        </li>
+      </ul>
+
+
         <router-outlet></router-outlet>
     </div>
 </div>

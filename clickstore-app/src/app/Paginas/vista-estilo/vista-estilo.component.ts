@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { stringify } from 'querystring';
+import { AutService } from '../../aut.service'
 
 @Component({
   selector: 'app-vista-estilo',
@@ -13,7 +14,7 @@ export class VistaEstiloComponent implements OnInit {
     'font-family':'Arial'
   }
 
-  constructor() { }
+  constructor(private autService: AutService) { }
 
   ngOnInit(): void 
   {  }

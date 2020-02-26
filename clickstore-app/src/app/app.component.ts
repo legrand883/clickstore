@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { collectExternalReferences } from '@angular/compiler';
 import { Articulo, Fruta, Verdura, Alcohol, Impuestos } from './Modelos';
+import { AutService } from './aut.service';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,14 @@ import { Articulo, Fruta, Verdura, Alcohol, Impuestos } from './Modelos';
 export class AppComponent  implements OnInit {
   title = 'clickstore-app';
 
+
+  constructor(public autService:AutService){}
+
   ngOnInit()
   {
+
+    this.autService.esActivo();
+
 
   let nombre 		     = "Emmanuel";
   let nombre2:string = "Emmanuel 2";

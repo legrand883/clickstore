@@ -19,11 +19,17 @@ import { VistaIdentificadorComponent } from './Paginas/vista-identificador/vista
 import { VistaAgregarUsuarioComponent } from './Paginas/vista-agregar-usuario/vista-agregar-usuario.component';
 import { VistaAgregarUsuariosComponent } from './Paginas/vista-agregar-usuarios/vista-agregar-usuarios.component';
 import { VistaUsuariosComponent } from './Paginas/vista-usuarios/vista-usuarios.component';
-
+import { ReactiveFormsModule} from '@angular/forms';
+import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component'
+import { AutService} from './aut.service'
 
 @NgModule({
   declarations: [
-    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, VistaUsuariosComponent
+    AppComponent,ModulosExternosComponent, VistaBootstrapComponent, 
+    VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, 
+    VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, 
+    VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, 
+    VistaUsuariosComponent,VistaLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +37,10 @@ import { VistaUsuariosComponent } from './Paginas/vista-usuarios/vista-usuarios.
     UtilidadesModule,
     AdministracionModule,
     ModalModule.forRoot(),
-    ProductosModule
+    ProductosModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
