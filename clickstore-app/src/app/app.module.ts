@@ -21,7 +21,8 @@ import { VistaAgregarUsuariosComponent } from './Paginas/vista-agregar-usuarios/
 import { VistaUsuariosComponent } from './Paginas/vista-usuarios/vista-usuarios.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component'
-import { AutService} from './aut.service'
+import { AutService} from './aut.service';
+import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { AutService} from './aut.service'
     VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, 
     VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, 
     VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, 
-    VistaUsuariosComponent,VistaLoginComponent
+    VistaUsuariosComponent,VistaLoginComponent, VistaObservadorComponent
   ],
   imports: [
     BrowserModule,

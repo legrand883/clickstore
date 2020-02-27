@@ -20,6 +20,31 @@ export class AutService {
       }
   }
 
+
+  public esActivo() {
+
+    let usuario: any = JSON.parse(localStorage.getItem('usuario'));
+
+    if (usuario == null)
+    {
+      this.router.navigateByUrl("/login");
+      this.activo = false;
+
+    }
+
+    if (usuario.usuario == 'emesystem007@gmail.com') 
+    {
+      this.activo = true;
+      this.router.navigateByUrl("/componentes/componentes");
+
+    } else 
+    {
+      this.router.navigateByUrl("/login");
+      this.activo = false;
+    }
+  }
+
+/*
   public esActivo()
   {
     let usuario:any = JSON.parse(localStorage.getItem('usuario'));
@@ -38,7 +63,7 @@ export class AutService {
        }
     }
   }
-
+*/
   public salir()
   {
     localStorage.clear();

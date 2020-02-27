@@ -12,6 +12,7 @@ import { VistaIdentificadorComponent } from './Paginas/vista-identificador/vista
 import { VistaAgregarUsuarioComponent} from './Paginas/vista-agregar-usuario/vista-agregar-usuario.component'
 import { VistaUsuariosComponent} from './Paginas/vista-usuarios/vista-usuarios.component'
 import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component'
+import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component'
 
 const routes: Routes = [
   {
@@ -61,8 +62,11 @@ const routes: Routes = [
   {
     path:'login',
     component:VistaLoginComponent
+  },
+  {
+    path:'observador',
+    component:VistaObservadorComponent
   }
-
 ];
 
 @NgModule({

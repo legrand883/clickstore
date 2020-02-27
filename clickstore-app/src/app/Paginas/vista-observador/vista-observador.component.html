@@ -1,0 +1,7 @@
+<p>vista-observador works!</p>
+<!--ESTO ES PARA ESCUCHAR EL OBSERVABLE EN LA VISTA-->
+{{cadena$ | async }}
+<div *ngFor="let i of (lista$ | async)">
+    <label>{{i.nombre}}</label>
+    <label>{{i.precio}}</label>
+</div>
