@@ -5,11 +5,13 @@ import { UtilidadesModule} from '../Utilidades/utilidades.module';
 import { ReactiveFormsModule} from '@angular/forms';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 import { HttpClientModule} from '@angular/common/http';
+import { ServicioUsuariosService } from './servicio-usuarios.service';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 
 @NgModule({
-  declarations: [AgregarUsuarioComponent, ListaProductosComponent],
+  declarations: [AgregarUsuarioComponent, ListaProductosComponent, EditarUsuarioComponent],
   imports: [CommonModule, UtilidadesModule, ReactiveFormsModule, HttpClientModule],
-  exports: [AgregarUsuarioComponent,ListaProductosComponent]
-
+  exports: [AgregarUsuarioComponent,ListaProductosComponent,EditarUsuarioComponent],
+  providers: [ServicioUsuariosService]
 })
 export class AdministracionModule { }

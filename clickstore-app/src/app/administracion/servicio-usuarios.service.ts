@@ -31,4 +31,31 @@ export class ServicioUsuariosService {
       return usuarios;
     }));
   }
+
+  obtener(id: string): Observable<Usuario>
+  {
+    return this.httpClient.get<Usuario>(this.url + "/" + id + ".json")
+  }
+  
+  crear(usuario: Usuario): Observable<Usuario> {
+    return this.httpClient.post<any>(this.url + ".json", usuario).pipe(map(resultado => {
+      usuario.id = resultado.name;
+      return usuario;
+    }))
+  }
+
+  public borrar(id:string):Observable<any>
+  {
+    return this.httpClient.delete<any>(this.url + '/' + id + ".json")
+  }
+
+  public actualizar(usuario:Usuario): Observable<Usuario>
+  {
+    return this.httpClient.put<any>(this.url + '/' + usuario.id + ".json", usuario).pipe(map(resultado=>
+      {
+        let usuarioRespuesta: Usuario= resultado;
+        usuarioRespuesta.id=usuario.id;
+        return usuarioRespuesta;
+      }))
+  };
 }

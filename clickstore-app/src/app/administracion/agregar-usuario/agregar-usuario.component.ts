@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
-import { Router } from '@angular/router'
+import { Router, ActivatedRoute } from '@angular/router'
+import { ServicioUsuariosService } from '../servicio-usuarios.service';
 
 @Component({
   selector: 'app-agregar-usuario',
@@ -19,12 +20,14 @@ export class AgregarUsuarioComponent implements OnInit {
       apellido: new FormControl('VILLALOBOS',[Validators.required])
     }
   );
-  constructor(private router: Router) { }
+  constructor(private router: Router, private activatedRoute:ActivatedRoute, private servicioUsuariosService: ServicioUsuariosService) { }
 
-  ngOnInit(): void 
+  ngOnInit()
   {
-
+    let id: string = this.activatedRoute.snapshot.params['id'];
   }
+
+
 
   public guardar()
   {
@@ -32,9 +35,13 @@ export class AgregarUsuarioComponent implements OnInit {
     console.log("VALIDAR NOMBRE", this.usuario.valid);
 
     this.esValido= this.usuario.valid;
-    this.usuario.reset();
-    this.router.navigateByUrl ("/usuarios")
+    this.servicioUsuariosService.crear(this.usuario.value).subscribe(usuario=>
+      {
 
+    this.usuario.reset();
+    this.router.navigateByUrl ("/usuarios");
+  });
+  
     this.usuario.patchValue(
       {
       nombre: 'EMMANUEL',

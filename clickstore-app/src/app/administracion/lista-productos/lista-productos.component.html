@@ -11,7 +11,7 @@
         <th scope="row">{{M.id}}</th>
         <td>{{M.nombre}}</td>
         <td>{{M.apellido}}</td>
-        <td><button type="button" class="btn btn-success">EDITAR</button>
+        <td><button type="button" class="btn btn-success" (click)="editar(M.id)">EDITAR</button>
             <button type="button" class="btn btn-danger" (click)="borrar(M.id)">BORRAR</button>
         </td>
       </tr>

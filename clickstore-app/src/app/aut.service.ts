@@ -35,7 +35,7 @@ export class AutService {
     if (usuario.usuario == 'emesystem007@gmail.com') 
     {
       this.activo = true;
-      this.router.navigateByUrl("/componentes/componentes");
+      //this.router.navigateByUrl("/componentes/componentes");
 
     } else 
     {
