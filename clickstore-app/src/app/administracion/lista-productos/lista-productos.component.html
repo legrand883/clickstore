@@ -1,3 +1,9 @@
+<div class="input-group mb-3" [formGroup]="buscarForm">
+  <input type="text" class="form-control" formControlName="termino">
+  <!--<div class="input-group-append"></div>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">B U S C A R</button>
+  </div>-->
+</div>
 <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -7,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let M of usuarios">
+      <tr *ngFor="let M of usuarios | buscar:buscarForm.value.termino">
         <th scope="row">{{M.id}}</th>
         <td>{{M.nombre}}</td>
         <td>{{M.apellido}}</td>

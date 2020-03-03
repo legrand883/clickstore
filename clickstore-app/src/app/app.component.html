@@ -19,7 +19,7 @@
           </div>
     </div>
     <div class="col-md-9" [ngClass]="{'col-md-9':autService.activo, 'col-md-12':!autService.activo}">
-
+      <app-spinner></app-spinner>
       <ul class="nav justify-content-end" [hidden]="!autService.activo">
         <li class="nav-item">
           <button class="btn btn-success" (click)="autService.salir()">S A L I R</button>

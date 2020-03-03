@@ -7,9 +7,10 @@ import { ListaProductosComponent } from './lista-productos/lista-productos.compo
 import { HttpClientModule} from '@angular/common/http';
 import { ServicioUsuariosService } from './servicio-usuarios.service';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { BuscarPipe } from './../pipes/buscar.pipe'
 
 @NgModule({
-  declarations: [AgregarUsuarioComponent, ListaProductosComponent, EditarUsuarioComponent],
+  declarations: [AgregarUsuarioComponent, ListaProductosComponent, EditarUsuarioComponent,BuscarPipe],
   imports: [CommonModule, UtilidadesModule, ReactiveFormsModule, HttpClientModule],
   exports: [AgregarUsuarioComponent,ListaProductosComponent,EditarUsuarioComponent],
   providers: [ServicioUsuariosService]

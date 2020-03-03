@@ -6,12 +6,13 @@ import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { PieComponent } from './pie/pie.component';
 import { ConvertirPipe } from './pipes/convertir.pipe';
 import { ContarletrasPipe } from './pipes/contarletras.pipe';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 
 @NgModule({
-  declarations: [TarjetaComponent, EncabezadoComponent, CuerpoComponent, PieComponent, ConvertirPipe, ContarletrasPipe],
+  declarations: [TarjetaComponent, EncabezadoComponent, CuerpoComponent, PieComponent, ConvertirPipe, ContarletrasPipe, SpinnerComponent],
   imports: [CommonModule], 
-  exports: [TarjetaComponent]
+  exports: [TarjetaComponent, SpinnerComponent]
 })
 export class UtilidadesModule { }

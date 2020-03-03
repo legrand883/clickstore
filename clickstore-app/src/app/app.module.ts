@@ -23,7 +23,9 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component'
 import { AutService} from './aut.service';
 import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component';
-import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vista-editar-usuario.component'
+import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vista-editar-usuario.component';
+import { SpinnerService} from './spinner.service'
+//import { BuscarPipe } from './pipes/buscar.pipe'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vist
     VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, 
     VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, 
     VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, 
-    VistaUsuariosComponent,VistaLoginComponent, VistaObservadorComponent, VistaEditarUsuarioComponent
+    VistaUsuariosComponent,VistaLoginComponent, VistaObservadorComponent, VistaEditarUsuarioComponent //, BuscarPipe
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vist
     ProductosModule,
     ReactiveFormsModule
   ],
-  providers: [AutService],
+  providers: [AutService,SpinnerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
