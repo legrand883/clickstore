@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TarjetaComponent } from './Utilidades/tarjeta/tarjeta.component'
 import { VistaBootstrapComponent} from './Paginas/vista-bootstrap/vista-bootstrap.component'
@@ -13,7 +13,9 @@ import { VistaAgregarUsuarioComponent} from './Paginas/vista-agregar-usuario/vis
 import { VistaUsuariosComponent} from './Paginas/vista-usuarios/vista-usuarios.component'
 import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component'
 import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component';
-import {VistaEditarUsuarioComponent} from './Paginas/vista-editar-usuario/vista-editar-usuario.component';
+import { VistaEditarUsuarioComponent} from './Paginas/vista-editar-usuario/vista-editar-usuario.component';
+import { VistaProductosComponent } from './Paginas/vista-productos/vista-productos.component';
+
 
 const routes: Routes = [
   {
@@ -71,6 +73,10 @@ const routes: Routes = [
   {
     path:'usuarios/:id',
     component:VistaEditarUsuarioComponent
+  },
+  {
+    path:'productos',
+    component:VistaProductosComponent
   }
 ];
 

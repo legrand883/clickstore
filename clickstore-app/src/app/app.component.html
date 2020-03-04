@@ -1,7 +1,5 @@
-
-
 <div class = "row">
-    <div class="col-md-3" [hidden]="!autService.activo">
+    <div [ngClass]="{'col-md-3':abierto, '': !abierto}" [hidden]="!autService.activo || !abierto">
         <div class="list-group">
             <!--<a href="#" class="list-group-item list-group-item-action active">
               Cras justo odio
@@ -16,17 +14,19 @@
             <a class="list-group-item" routerLink="/directivas/condicion">condicion</a>
             <a class="list-group-item" routerLink="usuarios">usuarios</a>
             <a class="list-group-item" routerLink="observador">observador</a>
+            <a class="list-group-item" routerLink="productos">productos</a>
           </div>
     </div>
-    <div class="col-md-9" [ngClass]="{'col-md-9':autService.activo, 'col-md-12':!autService.activo}">
-      <app-spinner></app-spinner>
+    <div class="col-md-9" [ngClass]="{'col-md-9':autService.activo, 'col-md-12':!autService.activo || !abierto}">
+  
+    <app-header *ngIf="autService.activo" (onSignOut)="autService.salir()" (onClickMenu)="abierto=!abierto"></app-header>
+  
       <ul class="nav justify-content-end" [hidden]="!autService.activo">
         <li class="nav-item">
           <button class="btn btn-success" (click)="autService.salir()">S A L I R</button>
         </li>
       </ul>
-
-
-        <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </div>
 </div>
+

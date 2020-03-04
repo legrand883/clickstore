@@ -13,6 +13,7 @@ export class AppComponent  implements OnInit {
 
 
   constructor(public autService:AutService){}
+  public abierto: Boolean = false;
 
   ngOnInit()
   {

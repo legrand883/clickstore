@@ -24,7 +24,8 @@ import { VistaLoginComponent } from './Paginas/vista-login/vista-login.component
 import { AutService} from './aut.service';
 import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component';
 import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vista-editar-usuario.component';
-import { SpinnerService} from './spinner.service'
+import { SpinnerService} from './spinner.service';
+import { VistaProductosComponent } from './paginas/vista-productos/vista-productos.component'
 //import { BuscarPipe } from './pipes/buscar.pipe'
 
 @NgModule({
@@ -33,7 +34,7 @@ import { SpinnerService} from './spinner.service'
     VistaComponentComponent, VistaCicloComponent, VistaCondicionComponent, 
     VistaSwitchComponent, VistaClaseComponent, VistaEstiloComponent, 
     VistaIdentificadorComponent, VistaAgregarUsuarioComponent, VistaAgregarUsuariosComponent, 
-    VistaUsuariosComponent,VistaLoginComponent, VistaObservadorComponent, VistaEditarUsuarioComponent //, BuscarPipe
+    VistaUsuariosComponent,VistaLoginComponent, VistaObservadorComponent, VistaEditarUsuarioComponent, VistaProductosComponent //, BuscarPipe
   ],
   imports: [
     BrowserModule,
