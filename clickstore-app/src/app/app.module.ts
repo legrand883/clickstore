@@ -25,7 +25,7 @@ import { AutService} from './aut.service';
 import { VistaObservadorComponent } from './Paginas/vista-observador/vista-observador.component';
 import { VistaEditarUsuarioComponent } from './Paginas/vista-editar-usuario/vista-editar-usuario.component';
 import { SpinnerService} from './spinner.service';
-import { VistaProductosComponent } from './paginas/vista-productos/vista-productos.component'
+import { VistaProductosComponent } from './Paginas/vista-productos/vista-productos.component'
 //import { BuscarPipe } from './pipes/buscar.pipe'
 
 @NgModule({

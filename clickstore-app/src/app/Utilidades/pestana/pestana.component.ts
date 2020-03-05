@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-pestana',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PestanaComponent implements OnInit {
 
-  constructor() { }
+    @Input() pestana:any[]=[];
+    @Output() onTab: EventEmitter<string>=new EventEmitter<string>();
 
-  ngOnInit(): void {
-  }
+    constructor() { }
+
+  ngOnInit() { }
+
+  public clickTab(identificador:string)
+    {
+      //alert ('estoy aqui');
+      this.onTab.emit(identificador);
+    }
 
 }

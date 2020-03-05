@@ -14,6 +14,6 @@ import { PestanaComponent } from './pestana/pestana.component';
 @NgModule({
   declarations: [TarjetaComponent, EncabezadoComponent, CuerpoComponent, PieComponent, ConvertirPipe, ContarletrasPipe, SpinnerComponent, HeaderComponent, PestanaComponent],
   imports: [CommonModule], 
-  exports: [TarjetaComponent, SpinnerComponent,HeaderComponent]
+  exports: [TarjetaComponent, SpinnerComponent,HeaderComponent,PestanaComponent]
 })
 export class UtilidadesModule { }
